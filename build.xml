@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="P2 Repo Build" default="rebuildRepository" basedir=".">
+	<target name="rebuildRepository">
+		<eclipse.publish.featuresAndBundles 
+			metadataRepository="file:${basedir}/repository" 
+			artifactRepository="file:${basedir}/repository" 
+			compress="true">
+				<features  dir="releng"/>
+		</eclipse.publish.featuresAndBundles>
+	</target>
+</project>
